@@ -1,8 +1,29 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px Courier, monospace;
+  color: #7FFF00;
+  background-color: #000000;
 }
 
 a {
-  color: #00B7FF;
+  color: #7FFF00;
+}
+
+a:hover, a:focus {
+  color: #006400;
+}
+
+.banner{
+  background-color: #7FFF00;
+  color: #000000;
+  font-size: 22px;
+  font-family: Courier, monospace;
+  position: absolute;
+  top: 0;
+  padding: 7px;
+  margin: 0;
+}
+
+.charades{
+  font-size: 40px;
 }

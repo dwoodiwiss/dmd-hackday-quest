@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  div.banner
+    i(class="#{ icon }") &nbsp; #{ status }
+
+  h1 Riddle 7
+  h2#info
+  p Who's your favourite lecturer?&nbsp;
+    i.icon-smile
+  form(action="/eight", method="POST")
+    input#lec(name='fav', type='text')
+    input(name='submit', type='submit')
+
+  script console.log('...');

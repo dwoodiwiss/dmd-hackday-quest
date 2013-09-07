@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  div.banner
+    i(class="#{ icon }") &nbsp; #{ status }
+
+  h1 Riddle 8
+  table
+    tr
+      td(width="300")
+        img(src='/images/ds.jpeg')
+      td
+        h4 More charades
+        form(action="location", method="POST")
+          label(for="first")
+            i.icon-fullscreen.charades
+          input(name="first", type="text")
+          br
+          label(for="second")
+            i.icon-apple.charades
+          input(name="second", type="text")
+          br
+          input#submit(name="submit", type="submit", text="Submit")
+
+
+  script console.log('Hint: Placename (slang)');

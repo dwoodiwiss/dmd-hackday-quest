@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  div.banner
+    i(class="#{ icon }") &nbsp; #{ status }
+
+  h1 Riddle 9
+  p Where are we?&nbsp;
+    i.icon-globe
+
+  form(action="/l4s7", method="POST")
+    label(for="lat") Latitude:
+    input(name="lat", type="text")
+    br
+    label(for="lon") Longitude:
+    input(name="lon", type="text")
+    br
+    input#submit(name="submit", type="submit", text="Submit")
+
+
+  script console.log('...');

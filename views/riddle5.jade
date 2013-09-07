@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  div.banner
+    i(class="#{ icon }") &nbsp; #{ status }
+
+  h1 Riddle 5
+  p Let's play charades!
+
+
+  form(action="charades", method="POST")
+    label(for="first")
+      i.icon-bug.charades
+    input(name="first", type="text")
+    br
+    label(for="second")
+      i.icon-male.charades
+    input(name="second", type="text")
+    br
+    input#submit(name="submit", type="submit", text="Submit")
+
+
+  script console.log('...');

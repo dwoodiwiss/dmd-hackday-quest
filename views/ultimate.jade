@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  div.banner
+    i(class="#{ icon }") &nbsp; #{ status }
+
+  table
+    tr
+      td
+        img(src="/images/bigbrother.jpg")
+      td
+        h1 MISSION COMPLETE
+        p Well done #{ name }, you have conquered PiHack v1.0
+        p Till next time...
+
+  script console.log('Reverse it and de-hackify it.');

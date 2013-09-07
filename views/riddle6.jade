@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  div.banner
+    i(class="#{ icon }") &nbsp; #{ status }
+
+  h1 Riddle 6
+  p Please press this button 1983 times.
+
+  button#clicktest(type='button') Click
+
+  script.
+    (function(){
+      totalclicks = 0;
+
+      var btn = document.getElementById("clicktest");
+      btn.onclick = function(){
+        totalclicks = totalclicks + 1;
+        console.log(totalclicks);
+
+        if(totalclicks > 1983){
+          var goal = 1984;
+          document.location.href=goal;
+        };
+      };
+    })();
+
+  script console.log('If only totalclicks was greater than 1983...');

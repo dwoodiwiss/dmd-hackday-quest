@@ -5,12 +5,16 @@ block content
     i(class="#{ icon }") &nbsp; #{ status }
 
   h1 Riddle 1
-  h4 Please login:
+  p Please login:
 
   form(action="riddle1", method="POST")
+
+    i.icon-user
     label(for="username") Username:
     input(name="username", type="text")
     br
+
+    i.icon-lock
     label(for="password") Password:
     input(name="password", type="password")
     br

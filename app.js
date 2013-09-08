@@ -43,8 +43,8 @@ app.post('/riddle3', routes.riddle3);
 app.get('/ziggy', routes.riddle4);
 app.post('/ziggy', routes.riddle4);
 
-app.get('/HID', routes.hid);
-app.post('/HID', routes.hid);
+app.get('/HID', routes.riddle5);
+app.post('/HID', routes.riddle5);
 
 app.get('/charades', routes.riddle6);
 app.post('/charades', routes.riddle6);
@@ -64,10 +64,10 @@ app.post('/l4s7', routes.riddle10);
 app.get('/ultimate', routes.end);
 app.post('/ultimate', routes.end);
 
-app.get('/theanswer', routes.theanswer); // rickroll
 
-// app.get('/riddle5', routes.riddle5);
-// app.post('/riddle5', routes.riddle5);
+// rickroll bonus
+app.get('/theanswer', routes.theanswer);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

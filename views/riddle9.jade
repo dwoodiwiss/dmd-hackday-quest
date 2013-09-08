@@ -8,10 +8,12 @@ block content
   p Where are we?&nbsp;
     i.icon-globe
 
-  form(action="/l4s7", method="POST")
+  form(action="/location", method="POST")
+    i.icon-map-marker
     label(for="lat") Latitude:
     input(name="lat", type="text")
     br
+    i.icon-map-marker
     label(for="lon") Longitude:
     input(name="lon", type="text")
     br

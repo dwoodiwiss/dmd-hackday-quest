@@ -118,11 +118,12 @@ exports.riddle9 = function(req, res){
   if (req.method == "POST") {
     var lat = req.body.lat;
     var lon = req.body.lon;
+  
+    // Latitude - Longitude:
+    // 51.060028,-1.326062
 
-    if (lat == 'test' && lon == 'test') {
-    // if (lat >= 10 || lat <= 10 && lon >= 15 || lon <= 15 ) {
+    if (lat == '51.060028' && lon == '-1.326062') {
       res.render('riddle10', { title: 'Riddle 10', icon: 'icon-thumbs-up', status: 'Correct! So... Close...' });
-      // res.render('riddle9');
     } else {
       res.render('riddle9', { title: 'Riddle 9', icon: 'icon-thumbs-down', status: 'Incorrect! Maybe google it?' });
     }

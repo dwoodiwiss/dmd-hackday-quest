@@ -34,8 +34,8 @@ app.get('/users', user.list);
 app.get('/riddle1', routes.riddle1);
 app.post('/riddle1', routes.riddle1);
 
-app.get('/riddle2', routes.riddle2);
-app.post('/riddle2', routes.riddle2);
+app.get('/rid2', routes.riddle2);
+app.post('/rid2', routes.riddle2);
 
 app.get('/riddle3', routes.riddle3);
 app.post('/riddle3', routes.riddle3);

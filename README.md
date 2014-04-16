@@ -11,4 +11,4 @@ The answer to the first /riddle1 is:
 Username: admin
 Password: 9876
 
-More can be read [here](http://localhost:2368/the-university-of-winchester/)
+More can be read [here](http://woodiwiss.me/the-university-of-winchester/)
